@@ -1,0 +1,67 @@
+.sticky-top {
+  padding: 15px 0px;
+  height: auto !important ;
+  background-color: #5c2a9d;
+}
+
+.HeaderLogo {
+  color: #fff !important;
+  font-size: 27px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s linear;
+}
+.HeaderLogo:hover {
+  transform: scale(1.1);
+}
+
+.navbarItemLink {
+  color: #fff !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s linear;
+  text-decoration: none;
+}
+
+.navbarItemLink:hover {
+  transform: scale(1.1);
+}
+
+.navbarItemCategories {
+  background-color: #5c2a9d !important;
+  margin: 0px 0px !important;
+  padding: 0px 0px;
+  z-index: 1000;
+}
+
+.navbarItemCategories a {
+  color: #fff !important;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+.navbarItemCategories a:hover {
+  transform: scale(1.1);
+}
+
+.fa-shopping-bag {
+  font-size: 16px;
+}
+.navbar-collapse {
+  padding: 3px 27px;
+}
+.dropdown-menu {
+  padding-top: 0px 0px !important;
+}
+
+@media (max-width: 768px) {
+  .sticky-top {
+    height: auto;
+    padding: 0.1rem 0.1rem;
+  }
+  .navbarItemCategoriesLink {
+    align-items: left;
+    margin-left: 0 !important;
+  }
+  .navdiv {
+    padding-left: 12px;
+  }
+}
