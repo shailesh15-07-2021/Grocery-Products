@@ -1,25 +1,20 @@
 const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema({
-  vendorObjectID: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Vendor",
-    },
-  ],
+  vendorObjectID: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Vendor",
+  },
 
-  categoryObjectID: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Category",
-    },
-  ],
-  SubCategoryObjectID: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "SubCategory",
-    },
-  ],
+  categoryObjectID: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Category",
+  },
+
+  SubCategoryObjectID: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "SubCategory",
+  },
 
   slug: {
     type: String,

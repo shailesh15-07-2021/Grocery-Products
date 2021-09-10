@@ -51,7 +51,7 @@ module.exports = (req, res, next) => {
   // console.log(action);
 
   ProductDB.find(action)
-    .limit(12)
+    .limit(120)
     .skip(0)
     .exec()
     .then((result) => {
@@ -63,29 +63,3 @@ module.exports = (req, res, next) => {
       });
     });
 };
-
-// const APIFeatures = require("../../utils/apiFeatures");
-
-// module.exports = async (req, res, next) => {
-//   const resPerPage = 9;
-//   const productsCount = await ProductDB.countDocuments();
-
-//   const apiFeatures = new APIFeatures(ProductDB.find(), req.query)
-//     .search()
-//     .filter();
-
-//   let products = await apiFeatures.query;
-//   let filteredProductsCount = products.length;
-
-//   apiFeatures.pagination(resPerPage);
-
-//   products = await apiFeatures.query;
-
-//   res.status(200).json({
-//     success: true,
-//     productsCount,
-//     resPerPage,
-//     filteredProductsCount,
-//     products,
-//   });
-// };
